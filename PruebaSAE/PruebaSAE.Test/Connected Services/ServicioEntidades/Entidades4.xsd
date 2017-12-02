@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PruebaSAE.Negocio.Entidades" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PruebaSAE.Negocio.Entidades" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPadre">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Padre" nillable="true" type="tns:Padre" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPadre" nillable="true" type="tns:ArrayOfPadre" />
+  <xs:complexType name="Padre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Hijos" nillable="true" type="tns:ArrayOfHijo" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Padre" nillable="true" type="tns:Padre" />
+  <xs:complexType name="ArrayOfHijo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Hijo" nillable="true" type="tns:Hijo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHijo" nillable="true" type="tns:ArrayOfHijo" />
+  <xs:complexType name="Hijo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPadre" type="xs:long" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Hijo" nillable="true" type="tns:Hijo" />
+</xs:schema>
