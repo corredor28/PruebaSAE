@@ -1,0 +1,25 @@
+﻿@model PruebaSAE.Presentacion.Models.ModeloHijos
+
+@{
+    ViewBag.Title = "Hijos";
+}
+
+<h2>Hijos</h2>
+
+<table class="table table-hover table-head">
+    <thead class="text-white bgcolor-blue">
+        <tr>
+            <th class="text-center">Id</th>
+            <th class="text-center">Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var hijo in Model.Hijos)
+        {
+            <tr>
+                <td>@hijo.Id</td>
+                <td>@hijo.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>

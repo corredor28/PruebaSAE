@@ -6,6 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaSAE.Negocio", "PruebaSAE.Negocio\PruebaSAE.Negocio.csproj", "{99B003D8-A9A5-434D-B5B1-F85792AB7E3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaSAE.Presentacion", "PruebaSAE.Presentacion\PruebaSAE.Presentacion.csproj", "{066565B1-0996-4B17-B182-D89278D72658}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99B003D8-A9A5-434D-B5B1-F85792AB7E3A} = {99B003D8-A9A5-434D-B5B1-F85792AB7E3A}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A71E337-4386-4232-A1D7-6D42F41E5C54}"
+	ProjectSection(SolutionItems) = preProject
+		BaseDeDatos.sql = BaseDeDatos.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

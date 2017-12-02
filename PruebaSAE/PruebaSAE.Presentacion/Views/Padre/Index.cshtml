@@ -1,0 +1,30 @@
+﻿@model PruebaSAE.Presentacion.Models.ModeloPadres
+
+@{
+    ViewBag.Title = "Padres";
+}
+
+<h2>Padres</h2>
+
+@Html.ActionLink("Crear padre", "Crear", "Padre")
+
+<table class="table table-hover table-head">
+    <thead class="text-white bgcolor-blue">
+        <tr>
+            <th class="text-center">Id</th>
+            <th class="text-center">Nombre</th>
+            <th class="text-center">Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var padre in Model.Padres)
+        {
+            <tr>
+                <td>@padre.Id</td>
+                <td>@padre.Nombre</td>
+                <td>@Html.ActionLink("Ver hijos", "Hijos", "Padre", new { idPadre = padre.Id }, null)
+                     | @Html.ActionLink("Crear hijos", "Crear", "Hijo", new { idPadre = padre.Id }, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>

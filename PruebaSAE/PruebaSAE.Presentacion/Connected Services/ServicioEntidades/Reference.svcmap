@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5a09498d-30e6-4d32-aea1-4ebd47a8bb6c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61733/Entidades.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Entidades.xsd" MetadataType="Schema" ID="0f71a3b7-5fe6-4df7-8b89-76103ae45916" SourceId="1" SourceUrl="http://localhost:61733/Entidades.svc?xsd=xsd0" />
+    <MetadataFile FileName="Entidades1.xsd" MetadataType="Schema" ID="d872ba09-747a-4445-a792-9c88da67857e" SourceId="1" SourceUrl="http://localhost:61733/Entidades.svc?xsd=xsd3" />
+    <MetadataFile FileName="Entidades2.xsd" MetadataType="Schema" ID="287fea19-0551-4d57-911f-11e9f62013ab" SourceId="1" SourceUrl="http://localhost:61733/Entidades.svc?xsd=xsd2" />
+    <MetadataFile FileName="Entidades3.xsd" MetadataType="Schema" ID="b8f457b3-ccc9-44ac-8a8c-d7df68bb2a78" SourceId="1" SourceUrl="http://localhost:61733/Entidades.svc?xsd=xsd1" />
+    <MetadataFile FileName="Negocio.wsdl" MetadataType="Wsdl" ID="c43237d1-8f64-451c-a3f3-b8f4fe6bcc5d" SourceId="1" SourceUrl="http://localhost:61733/Entidades.svc?wsdl" />
+    <MetadataFile FileName="Entidades.disco" MetadataType="Disco" ID="839508dc-a68a-472d-a2df-1b94f5eb1cc5" SourceId="1" SourceUrl="http://localhost:61733/Entidades.svc?disco" />
+    <MetadataFile FileName="Entidades4.xsd" MetadataType="Schema" ID="0078090c-93d0-4b35-9f5c-fb97a375f5a7" SourceId="1" SourceUrl="http://localhost:61733/Entidades.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
